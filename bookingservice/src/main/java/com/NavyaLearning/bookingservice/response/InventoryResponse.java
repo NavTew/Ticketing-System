@@ -1,7 +1,5 @@
-package com.NavyaLearning.inventoryservice.response;
+package com.NavyaLearning.bookingservice.response;
 
-
-import com.NavyaLearning.inventoryservice.entity.Venue;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,13 +8,13 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 
 @Data
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class EventInventoryResponse {
+@Builder
+public class InventoryResponse {
     private String event;
     private Long capacity;
-    private Venue venue;
+    private VenueResponse venue;
     private Long eventId;
     private BigDecimal ticketPrice;
 }
