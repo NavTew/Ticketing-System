@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 
 @Entity
 @Getter
@@ -29,7 +28,7 @@ public class Event {
     private Long leftCapacity;
 
     @ManyToOne
-    @JoinColumn(name = "location_id")
+    @JoinColumn(name = "venue_id")
     private Venue venue;
 
 }
