@@ -27,3 +27,8 @@ target/
 build/
 out/
 bin/
+
+.idea/
+*.iml
+*.iws
+*.ipr
