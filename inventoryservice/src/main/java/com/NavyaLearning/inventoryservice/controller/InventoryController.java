@@ -22,6 +22,7 @@ public class InventoryController {
     @GetMapping("/inventory/events")
     @ResponseBody
     public List<EventInventoryResponse> inventoryGetAllEvents() {
+
         return inventoryService.getAllEvents();
     }
 
