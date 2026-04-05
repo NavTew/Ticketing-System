@@ -4,7 +4,7 @@ services:
     container_name: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD:
+      MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: ticketing
     ports:
       - "3306:3306"
@@ -72,7 +72,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: keycloak
       MYSQL_USER: keycloak
-      MYSQL_PASSWORD:
+      MYSQL_PASSWORD: password
 
   keycloak:
     container_name: keycloak
@@ -83,9 +83,9 @@ services:
       DB_ADDR: mysql
       DB_DATABASE: keycloak
       DB_USER: keycloak
-      DB_PASSWORD:
+      DB_PASSWORD: password
       KEYCLOAK_ADMIN: admin
-      KEYCLOAK_ADMIN_PASSWORD:
+      KEYCLOAK_ADMIN_PASSWORD: admin
     ports:
       - "8091:8080"
     volumes:
