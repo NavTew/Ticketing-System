@@ -38,7 +38,7 @@ public class OrderService {
 
     private Order createOrder(BookingEvent bookingEvent){
         return Order.builder()
-                .customerId(bookingEvent.getEventId())
+                .customerId(bookingEvent.getUserId())
                 .eventId(bookingEvent.getEventId())
                 .ticketCount(bookingEvent.getTicketCount())
                 .totalPrice(bookingEvent.getTotalPrice())
