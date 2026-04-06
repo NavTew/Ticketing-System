@@ -4,6 +4,19 @@
 
 A robust, scalable backend for modern event ticketing and booking!
 
+
+
+
+<img width="680" height="418" alt="Screenshot 2026-04-06 at 8 30 41 PM" src="https://github.com/user-attachments/assets/29790daf-53b1-443a-b5a5-50e062917ea5" />
+
+
+
+
+
+
+
+
+
 </div>
 
 ---
